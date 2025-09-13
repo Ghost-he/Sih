@@ -1,0 +1,41 @@
+-- Enhanced sample data for demonstration
+
+-- Bus stops data
+INSERT INTO bus_stops (id, name, latitude, longitude) VALUES
+('stop_001', 'City Center Bus Stand', 16.5062, 80.6480),
+('stop_002', 'Railway Station', 16.5100, 80.6520),
+('stop_003', 'Government Hospital', 16.4980, 80.6420),
+('stop_004', 'University Gate', 16.5200, 80.6300),
+('stop_005', 'Airport Junction', 16.5300, 80.6100),
+('stop_006', 'Mall Complex', 16.5150, 80.6450),
+('stop_007', 'Old Bus Stand', 16.5000, 80.6500),
+('stop_008', 'IT Park', 16.5250, 80.6200);
+
+-- Bus stop routes associations
+INSERT INTO bus_stop_routes (stop_id, route_number) VALUES
+('stop_001', 'B101'), ('stop_001', 'B102'), ('stop_001', 'B103'),
+('stop_002', 'B101'), ('stop_002', 'B104'),
+('stop_003', 'B102'), ('stop_003', 'B103'),
+('stop_004', 'B103'), ('stop_004', 'B105'),
+('stop_005', 'B101'), ('stop_005', 'B106'),
+('stop_006', 'B102'), ('stop_006', 'B104'),
+('stop_007', 'B104'), ('stop_007', 'B105'),
+('stop_008', 'B105'), ('stop_008', 'B106');
+
+-- Enhanced tourist spots
+INSERT INTO tourist_spots (id, name, description, latitude, longitude, category, rating, image_url) VALUES
+('spot_001', 'Amaravati Heritage Site', 'Ancient Buddhist site with stupas, museum showcasing artifacts from the Satavahana period', 16.5737, 80.3570, 'Heritage', 4.5, 'https://example.com/amaravati.jpg'),
+('spot_002', 'Kondaveedu Fort', 'Historic hilltop fort offering panoramic views of Krishna valley, built in 14th century', 16.6224, 80.5449, 'Historical', 4.2, 'https://example.com/kondaveedu.jpg'),
+('spot_003', 'Uppalapadu Bird Sanctuary', 'Natural habitat for migratory birds, best visiting time December to March', 16.3833, 80.1167, 'Nature', 4.0, 'https://example.com/birds.jpg'),
+('spot_004', 'Mangalagiri Temple', 'Ancient temple dedicated to Lord Narasimha, famous for its unique architecture', 16.4300, 80.5600, 'Religious', 4.3, 'https://example.com/mangalagiri.jpg'),
+('spot_005', 'Guntur Museum', 'Local museum showcasing regional history, artifacts, and cultural heritage', 16.5062, 80.6480, 'Heritage', 3.8, 'https://example.com/museum.jpg'),
+('spot_006', 'Kotappakonda', 'Hilltop temple complex, popular pilgrimage destination with scenic views', 16.2000, 80.4000, 'Religious', 4.1, 'https://example.com/kotappakonda.jpg');
+
+-- Sample route data
+INSERT INTO routes (id, route_number, route_name, start_location, end_location, distance_km, estimated_duration_minutes) VALUES
+('route_001', 'B101', 'City Center - Airport', 'City Center Bus Stand', 'Airport Junction', 12.5, 35),
+('route_002', 'B102', 'Railway Station - Mall', 'Railway Station', 'Mall Complex', 8.2, 25),
+('route_003', 'B103', 'University - Hospital', 'University Gate', 'Government Hospital', 6.7, 20),
+('route_004', 'B104', 'Mall - Old Bus Stand', 'Mall Complex', 'Old Bus Stand', 4.5, 15),
+('route_005', 'B105', 'University - IT Park', 'University Gate', 'IT Park', 9.3, 28),
+('route_006', 'B106', 'Airport - IT Park', 'Airport Junction', 'IT Park', 7.8, 22);
