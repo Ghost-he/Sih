@@ -3,3 +3,15 @@ mvn spring-boot:run
 
 # Setup PostgreSQL (Docker)
 docker run --name citybus-postgres -e POSTGRES_DB=citybus -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres:13
+
+### frontend set up 
+
+# Create Flutter project
+flutter create city_bus_app
+cd city_bus_app
+
+# Add dependencies
+flutter pub get
+
+# Run the app
+flutter run
