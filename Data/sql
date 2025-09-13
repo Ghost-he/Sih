@@ -1,0 +1,11 @@
+-- Sample bus data
+INSERT INTO buses (id, number, route_name, latitude, longitude, speed, occupancy, last_updated) VALUES
+('bus_001', 'B101', 'City Center - Airport', 16.5062, 80.6480, 35.5, 25, NOW()),
+('bus_002', 'B102', 'Railway Station - Mall', 16.5100, 80.6520, 28.0, 18, NOW()),
+('bus_003', 'B103', 'University - Hospital', 16.4980, 80.6420, 42.3, 32, NOW());
+
+-- Sample tourist spots
+INSERT INTO tourist_spots (id, name, description, latitude, longitude, category, rating, image_url) VALUES
+('spot_001', 'Amaravati Heritage Site', 'Ancient Buddhist site with stupas and museum', 16.5737, 80.3570, 'Heritage', 4.5, 'https://example.com/amaravati.jpg'),
+('spot_002', 'Kondaveedu Fort', 'Historic hilltop fort with panoramic views', 16.6224, 80.5449, 'Historical', 4.2, 'https://example.com/kondaveedu.jpg'),
+('spot_003', 'Uppalapadu Bird Sanctuary', 'Natural habitat for migratory birds', 16.3833, 80.1167, 'Nature', 4.0, 'https://example.com/birds.jpg');
